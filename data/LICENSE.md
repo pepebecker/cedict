@@ -1,0 +1,1 @@
+The data in here is generated from the [CC-CEDICT](https://www.mdbg.net/chinese/dictionary?page=cedict) dictionary which is **[CC-BY-SA-3.0](http://creativecommons.org/licenses/by-sa/3.0/)-licensed**.
