@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "cedict.bin provider for the mdbg module",
   "main": "index.js",
+  "files": [
+    "data"
+  ],
   "scripts": {
     "test": "mocha --timeout 10000",
     "cover": "istanbul cover _mocha",
