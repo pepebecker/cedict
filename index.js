@@ -1,12 +1,12 @@
 'use strict'
 
-const Pbf = require('pbf')
 const fs = require('fs')
 const path = require('path')
-const decoder = require('./data/cedict.proto.js')
+
+const decode = require('./decode')
 
 let data = fs.readFileSync(path.join(__dirname, 'data', 'cedict.bin'))
-const { entries } = decoder.Dict.read(new Pbf(data))
+const entries = decode(data)
 data = null
 
 module.exports = entries

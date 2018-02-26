@@ -4,6 +4,8 @@
   "description": "cedict.bin provider for the mdbg module",
   "main": "index.js",
   "files": [
+    "index.js",
+    "decode.js",
     "data"
   ],
   "scripts": {
