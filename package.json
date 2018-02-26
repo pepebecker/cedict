@@ -4,7 +4,7 @@
   "description": "cedict.bin provider for the mdbg module",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 5000",
+    "test": "mocha --timeout 10000",
     "cover": "istanbul cover _mocha",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
     "proto": "pbf build/cedict.proto > data/cedict.proto.js",
