@@ -9,7 +9,7 @@ script:
 after_success:
 - npm run coveralls
 before_deploy:
-- ls -lh data/*.json
+- ls -lh data/cedict.bin
 - npm version --no-git-tag-version --force $(npx semver -i minor $(npm info cedict version))
 deploy:
   provider: npm
