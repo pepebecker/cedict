@@ -35,7 +35,7 @@ const parseLine = (line, _, done) => {
 
   for (const i in hsk) {
     if (hsk[i].includes(simplified)) {
-      hskLvl = i + 1
+      hskLvl = parseInt(i) + 1
     }
   }
 
