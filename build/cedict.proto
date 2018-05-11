@@ -7,8 +7,9 @@ message PinyinDefinition {
 
 message DictEntry {
   required string traditional = 10;
-  optional string simplified = 11;
+  string simplified = 11;
   repeated PinyinDefinition definitions = 12;
+  int32 hsk = 13;
 }
 
 message Dict {

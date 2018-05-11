@@ -2,7 +2,6 @@
 
 [![npm version](https://img.shields.io/npm/v/cedict.svg)](https://www.npmjs.com/package/cedict)
 [![Travis Build Status](https://travis-ci.org/pepebecker/cedict.svg)](https://travis-ci.org/pepebecker/cedict)
-[![Coverage Status](https://coveralls.io/repos/github/pepebecker/cedict/badge.svg)](https://coveralls.io/github/pepebecker/cedict)
 [![Greenkeeper badge](https://badges.greenkeeper.io/pepebecker/cedict.svg)](https://greenkeeper.io/)
 [![dependency status](https://img.shields.io/david/pepebecker/cedict.svg)](https://david-dm.org/pepebecker/cedict)
 [![dev dependency status](https://img.shields.io/david/dev/pepebecker/cedict.svg)](https://david-dm.org/pepebecker/cedict#info=devDependencies)
@@ -23,6 +22,7 @@ This `cedict` module is just providing the `cedict.bin` which is being used by t
 
 - [`pinyin-utils`](https://github.com/pepebecker/pinyin-utils)
 - [`pinyin-split`](https://github.com/pepebecker/pinyin-split)
+- [`zhuyin`](https://github.com/pepebecker/zhuyin)
 - [`find-hanzi`](https://github.com/pepebecker/find-hanzi)
 - [`hsk-words`](https://github.com/pepebecker/hsk-words)
 - [`mdbg`](https://github.com/pepebecker/mdbg)

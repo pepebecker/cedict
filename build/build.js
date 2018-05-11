@@ -10,6 +10,7 @@ const reduce = require('through2-reduce')
 const exec = require('child_process').exec
 const path = require('path')
 const fs = require('fs')
+const hsk = require('./hsk')
 
 const PATHS = {
   cedict: path.join(__dirname, '../data/cedict_ts.u8'),
@@ -30,12 +31,20 @@ const parseLine = (line, _, done) => {
   const traditional = characters[0]
   const simplified = characters[1]
   const pinyin = mandarin[1].replace(/\u:/g, 'ü')
+  let hskLvl = 0
+
+  for (const i in hsk) {
+    if (hsk[i].includes(simplified)) {
+      hskLvl = i + 1
+    }
+  }
 
   done(null, {
     traditional,
     simplified: simplified !== traditional ? simplified : null,
     pinyin,
-    translations
+    translations,
+    hsk: hskLvl
   })
 }
 
@@ -45,7 +54,8 @@ const reduceLines = (acc, line) => {
     entry = acc[line.traditional] = {
       traditional: line.traditional,
       simplified: line.simplified,
-      definitions: []
+      definitions: [],
+      hsk: line.hsk
     }
   }
   entry.definitions.push({
