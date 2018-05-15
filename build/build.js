@@ -10,7 +10,7 @@ const reduce = require('through2-reduce')
 const exec = require('child_process').exec
 const path = require('path')
 const fs = require('fs')
-const hsk = require('./hsk')
+const hsk = require('../hsk.json')
 
 const PATHS = {
   cedict: path.join(__dirname, '../data/cedict_ts.u8'),

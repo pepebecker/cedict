@@ -6,7 +6,8 @@
   "files": [
     "index.js",
     "decode.js",
-    "data"
+    "data",
+    "hsk.json"
   ],
   "scripts": {
     "test": "mocha --timeout 10000",
