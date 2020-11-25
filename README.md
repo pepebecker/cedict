@@ -2,11 +2,9 @@
 
 [![npm version](https://img.shields.io/npm/v/cedict.svg)](https://www.npmjs.com/package/cedict)
 [![Travis Build Status](https://travis-ci.org/pepebecker/cedict.svg)](https://travis-ci.org/pepebecker/cedict)
-[![Greenkeeper badge](https://badges.greenkeeper.io/pepebecker/cedict.svg)](https://greenkeeper.io/)
 [![dependency status](https://img.shields.io/david/pepebecker/cedict.svg)](https://david-dm.org/pepebecker/cedict)
 [![dev dependency status](https://img.shields.io/david/dev/pepebecker/cedict.svg)](https://david-dm.org/pepebecker/cedict#info=devDependencies)
-[![ISC-licensed](https://img.shields.io/github/license/pepebecker/cedict.svg)](https://choosealicense.com/licenses/isc/)
-[![chat on gitter](https://badges.gitter.im/pepebecker.svg)](https://gitter.im/pepebecker)
+[![ISC-licensed](https://img.shields.io/github/license/pepebecker/cedict.svg)](https://opensource.org/licenses/isc)
 
 ## Install
 

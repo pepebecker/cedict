@@ -9,3 +9,4 @@ const decode = (data) => {
 }
 
 module.exports = decode
+module.exports.decode = decode

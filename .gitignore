@@ -1,5 +1,6 @@
 .DS_Store
-/package-lock.json
-/node_modules
-/data
+package-lock.json
+node_modules
+data
 !/data/LICENSE.md
+!/data/cedict.proto.d.ts

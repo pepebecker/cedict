@@ -1,5 +1,8 @@
 'use strict'
 
+require('mocha')
+const { expect } = require('chai')
+
 const cedict = require('../index')
 
 describe('Validate cedict data', () => {
@@ -10,11 +13,11 @@ describe('Validate cedict data', () => {
 			const hskType = typeof entry.hsk
 			const definitionsType = typeof entry.definitions
 			const definitionsLength = entry.definitions.length
-			traditionalType.should.equal('string')
-			simplifiedType.should.equal('string')
-			hskType.should.equal('number')
-			definitionsType.should.equal('object')
-			definitionsLength.should.greaterThan(0)
+			expect(traditionalType).equal('string')
+			expect(simplifiedType).equal('string')
+			expect(hskType).equal('number')
+			expect(definitionsType).equal('object')
+			expect(definitionsLength).greaterThan(0)
 		}
 		done()
 	})

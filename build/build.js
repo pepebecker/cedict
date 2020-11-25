@@ -70,7 +70,7 @@ const encodeEntries = encoder => (entries, _, done) => {
   for (let traditional in entries) {
     dict.entries.push(entries[traditional])
   }
-  
+
   const pbf = new Pbf()
   encoder.Dict.write(dict, pbf)
   done(null, pbf.finish())

@@ -1,11 +1,11 @@
 'use strict'
 
-const fs = require('fs')
-const path = require('path')
+const { readFileSync } = require('fs')
+const { join } = require('path')
 
-const decode = require('./decode')
+const { decode } = require('./decode')
 
-let data = fs.readFileSync(path.join(__dirname, 'data', 'cedict.bin'))
+let data = readFileSync(join(__dirname, 'data', 'cedict.bin'))
 const entries = decode(data)
 data = null
 
