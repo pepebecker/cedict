@@ -1,6 +1,6 @@
 {
   "name": "cedict",
-  "version": "1.0.0",
+  "version": "1.37.0",
   "description": "cedict.bin provider for the mdbg module",
   "keywords": [],
   "license": "ISC",
